@@ -1,0 +1,57 @@
+/* ==========================================================================
+   TABLET RESPONSIVE OVERRIDES — max-width: 1024px
+   Loaded after style.css, before mobile-res.css
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+  .container { padding: 0 32px; }
+  .section { padding: 80px 0; }
+
+  h2 { font-size: clamp(26px, 4vw, 34px); max-width: 22ch; }
+  .lead { font-size: 18px; }
+  .pullquote { font-size: 20px; }
+
+  /* Hero: stack ticket under content */
+  .hero { padding: 100px 0 70px; }
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero__title { font-size: clamp(30px, 5vw, 42px); }
+  .ticket { max-width: 480px; }
+  .host-card { max-width: 480px; padding: 32px 28px; }
+
+  /* Qualifier */
+  .qualifier-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  /* Modules */
+  .module { grid-template-columns: 56px 1fr; gap: 18px; padding: 26px 0; }
+  .module__num { font-size: 22px; }
+  .module h3 { font-size: 19px; }
+
+  /* Testimonial quotes */
+  .quote-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Facilitators: stack photo above content */
+  .facilitator, .facilitator--reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .facilitator--reverse .facilitator__photo { order: 0; }
+  .facilitator__photo { width: 100%; max-width: 320px; margin: 0 auto; }
+
+  /* Two paths */
+  .paths-grid { grid-template-columns: 1fr; gap: 18px; }
+
+  /* Ticket rows keep 2-col, just tighten padding */
+  .ticket__row { padding: 16px 20px; }
+  .ticket__top { padding: 14px 20px; }
+  .ticket__stub { padding: 18px 20px 20px; }
+
+  .receipt__row { padding: 16px 20px; font-size: 14.5px; }
+
+  .btn { padding: 15px 28px; font-size: 15px; }
+
+  .cert-moment img { height: 400px; }
+}
